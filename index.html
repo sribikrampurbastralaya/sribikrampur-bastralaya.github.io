@@ -3,19 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Discover the timeless elegance of sarees at Sri Bikrampur Bastralaya, a three-generation family saree store in Kolkata, India.">
-<title>Sri Bikrampur Bastralaya | Three Generations of Tradition</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Sri Bikrampur Bastralaya | Three Generations of Sarees</title>
+<meta name="description" content="Discover timeless sarees and traditional elegance at Sri Bikrampur Bastralaya, Kolkata.">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
 <style>
-:root{
+:root {
   --cream:#FAF5EA;
   --maroon:#6B1423;
   --gold:#B89A64;
   --dark:#2B2B2B;
-  --light:#F1E8D9;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -31,382 +27,338 @@ h1,h2,h3{
   line-height:1.15;
 }
 a{text-decoration:none;color:inherit}
-img{width:100%;display:block}
+.topbar{
+  background:var(--maroon);
+  color:white;text-align:center;
+  padding:9px;font-size:12px;
+  letter-spacing:1.5px;
+}
 header{
-  background:var(--cream);
-  padding:18px 6%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  border-bottom:1px solid #e4d7c3;
+  padding:22px 18px;
+  text-align:center;
+  border-bottom:1px solid #e7ddce;
 }
-.logo{
-  color:var(--maroon);
+.brand{
   font-family:'Cormorant Garamond',serif;
-  font-size:23px;
-  font-weight:700;
-  line-height:1.1;
+  font-size:32px;color:var(--maroon);
+  letter-spacing:2px;
 }
-.logo small{
-  display:block;
-  color:var(--gold);
-  font-family:'Lato',sans-serif;
-  font-size:10px;
-  letter-spacing:3px;
-  margin-top:5px;
+.brand-sub{
+  font-size:10px;letter-spacing:4px;
+  color:var(--gold);margin-top:5px;
 }
 nav{
-  display:flex;
-  gap:20px;
-  font-size:12px;
+  display:flex;justify-content:center;
+  gap:24px;flex-wrap:wrap;
+  padding:15px 10px;
+  font-size:12px;letter-spacing:1px;
 }
-nav a:hover{color:var(--gold)}
+nav a:hover{color:var(--maroon)}
 .hero{
-  min-height:620px;
-  display:flex;
-  align-items:center;
-  position:relative;
+  min-height:520px;
   background:
-  linear-gradient(90deg,rgba(24,15,13,.78),rgba(24,15,13,.12)),
-  url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1800&q=85');
-  background-size:cover;
-  background-position:center;
+  linear-gradient(90deg,rgba(35,10,16,.72),rgba(35,10,16,.1)),
+  url('https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1400&q=85');
+  background-size:cover;background-position:center;
+  display:flex;align-items:center;
+  padding:40px 8%;
   color:white;
-  padding:70px 8%;
 }
-.hero-content{max-width:600px}
+.hero-content{max-width:500px}
+.hero h1{font-size:55px;margin:20px 0}
+.hero p{font-size:15px;max-width:400px}
 .eyebrow{
-  color:var(--gold);
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:12px;
+  letter-spacing:3px;font-size:11px;
+  text-transform:uppercase;color:var(--gold);
 }
-.hero h1{
-  font-size:64px;
-  margin:20px 0;
-}
-.hero p{max-width:480px;font-size:17px}
 .btn{
   display:inline-block;
+  background:var(--maroon);color:white;
   padding:13px 25px;
-  background:var(--maroon);
-  color:white;
-  margin-top:25px;
-  font-size:13px;
-  letter-spacing:1px;
+  letter-spacing:1px;font-size:12px;
+  margin-top:20px;border:1px solid var(--maroon);
 }
-.btn:hover{background:#50101b}
-.btn.gold{
-  background:var(--gold);
+.btn:hover{background:#49101b}
+.btn-light{
+  background:var(--gold);border-color:var(--gold);
   color:#2B2B2B;
 }
-section{padding:75px 7%}
-.section-title{text-align:center;margin-bottom:40px}
-.section-title h2{
-  color:var(--maroon);
-  font-size:44px;
-  margin:10px 0;
-}
-.section-title p{font-size:14px;color:#766b5e}
+section{padding:65px 20px}
+.section-heading{text-align:center;margin-bottom:35px}
+.section-heading h2{font-size:40px;color:var(--maroon)}
+.section-heading p{font-size:13px;margin-top:10px}
 .story{
-  background:var(--light);
+  max-width:850px;margin:auto;
   text-align:center;
 }
-.story-content{max-width:750px;margin:auto}
-.story h2{
-  font-size:46px;
-  color:var(--maroon);
-  margin:18px 0;
-}
-.story p{margin:15px 0}
+.story h2{font-size:42px;color:var(--maroon);margin-bottom:20px}
+.story p{margin:14px auto;max-width:750px;font-size:15px}
 .categories{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:25px;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;max-width:1000px;margin:auto;
 }
-.category{position:relative;overflow:hidden}
+.category{
+  position:relative;min-height:250px;
+  overflow:hidden;
+}
 .category img{
-  height:390px;
-  object-fit:cover;
-  transition:transform .5s;
+  width:100%;height:100%;min-height:250px;
+  object-fit:cover;display:block;
 }
-.category:hover img{transform:scale(1.04)}
-.category-label{
-  position:absolute;
-  bottom:0;
-  left:0;
-  right:0;
-  background:linear-gradient(transparent,rgba(0,0,0,.75));
-  color:white;
-  padding:40px 20px 20px;
+.category-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(30,10,15,.7),transparent 75%);
+  display:flex;flex-direction:column;
+  justify-content:flex-end;
+  padding:20px;color:white;
 }
-.category-label h3{font-size:30px}
-.category-label p{font-size:12px}
+.category-overlay h3{font-size:28px}
 .products{
-  background:#F1E8D9;
-}
-.product-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;max-width:1000px;margin:auto;
 }
-.product img{
-  height:370px;
-  object-fit:cover;
+.product{background:#fffaf1;text-align:center;padding-bottom:20px}
+.product img{width:100%;height:260px;object-fit:cover}
+.product h3{font-size:26px;margin:15px 10px 5px;color:var(--maroon)}
+.product p{font-size:13px;padding:0 12px}
+.product .btn{margin-top:12px}
+.banner{
+  background:var(--maroon);color:white;
+  text-align:center;padding:60px 20px;
 }
-.product-info{
-  padding:18px 12px;
-  text-align:center;
-  background:var(--cream);
+.banner h2{font-size:42px}
+.banner p{margin:15px auto;max-width:600px;font-size:14px}
+.info-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:12px;max-width:850px;margin:auto;
 }
-.product-info h3{
-  color:var(--maroon);
-  font-size:27px;
+.info{
+  background:#f1e8d9;padding:25px;text-align:center;
 }
-.product-info p{font-size:13px}
-.product-info .btn{margin-top:12px}
-.heritage-banner{
-  background:var(--maroon);
-  color:white;
-  text-align:center;
-  padding:65px 8%;
-}
-.heritage-banner h2{font-size:46px}
-.heritage-banner p{
-  max-width:650px;
-  margin:20px auto;
-}
-.testimonials{
-  background:var(--cream);
-}
-.quote-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.quote{
-  background:var(--light);
-  padding:30px;
-  text-align:center;
-}
-.quote p{font-style:italic}
-.quote h3{
-  color:var(--maroon);
-  margin-top:15px;
-  font-size:22px;
-}
-.visit{
-  background:var(--light);
-  text-align:center;
-}
-.visit h2{font-size:44px;color:var(--maroon)}
-.visit p{margin:10px 0}
+.info h3{font-size:25px;color:var(--maroon)}
+.info p{font-size:13px;margin-top:8px}
 footer{
-  background:#2B211D;
-  color:white;
-  padding:45px 7%;
-  text-align:center;
+  background:#30151a;color:#f8efe0;
+  text-align:center;padding:40px 20px;
 }
-footer h2{
-  font-size:34px;
-  color:var(--gold);
-}
+footer h2{font-size:32px}
 footer p{font-size:13px;margin:10px}
 footer a{color:var(--gold)}
-.divider{
-  width:70px;
-  height:1px;
-  background:var(--gold);
-  margin:20px auto;
+.whatsapp{
+  position:fixed;right:18px;bottom:18px;
+  background:#168b55;color:white;
+  border-radius:50px;padding:14px 18px;
+  font-size:13px;font-weight:bold;
+  z-index:999;box-shadow:0 4px 12px #0003;
 }
-.whatsapp-float{
-  position:fixed;
-  bottom:20px;
-  right:18px;
-  background:#218C57;
-  color:white;
-  padding:14px 18px;
-  border-radius:50px;
-  z-index:99;
-  font-size:13px;
-  box-shadow:0 3px 15px rgba(0,0,0,.2);
-}
-@media(max-width:700px){
-  header{flex-direction:column;gap:15px}
-  nav{gap:12px;flex-wrap:wrap;justify-content:center}
-  nav a{font-size:11px}
-  .hero{min-height:540px;padding:50px 7%}
-  .hero h1{font-size:48px}
-  section{padding:55px 6%}
-  .section-title h2,.story h2,.visit h2{font-size:36px}
-  .categories,.product-grid,.quote-grid{
-    grid-template-columns:1fr;
-  }
-  .category img{height:380px}
-  .product img{height:420px}
-  .heritage-banner h2{font-size:38px}
+@media(max-width:600px){
+  .hero{min-height:430px;padding:30px 7%}
+  .hero h1{font-size:42px}
+  .brand{font-size:26px}
+  nav{gap:14px;font-size:11px}
+  section{padding:48px 16px}
+  .section-heading h2,.story h2{font-size:34px}
+  .categories,.products,.info-grid{grid-template-columns:1fr}
+  .category,.category img{min-height:280px}
+  .product img{height:300px}
+  .banner h2{font-size:34px}
 }
 </style>
 </head>
 
 <body>
 
+<div class="topbar">
+  A LEGACY OF TRADITION • KOLKATA, INDIA
+</div>
+
 <header>
-  <a href="#" class="logo">
-    SRI BIKRAMPUR BASTRALAYA
-    <small>THE ART OF TRADITION</small>
-  </a>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#story">Our Story</a>
-    <a href="#collection">Collections</a>
-    <a href="#sarees">Sarees</a>
-    <a href="#visit">Visit Us</a>
-  </nav>
+  <div class="brand">Sri Bikrampur Bastralaya</div>
+  <div class="brand-sub">THREE GENERATIONS • TIMELESS ELEGANCE</div>
 </header>
 
-<section class="hero" id="home">
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#heritage">OUR HERITAGE</a>
+  <a href="#collections">COLLECTIONS</a>
+  <a href="#featured">SAREES</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<div class="hero" id="home">
   <div class="hero-content">
-    <p class="eyebrow">A legacy woven through generations</p>
-    <h1>The Timeless Beauty of Indian Sarees</h1>
-    <p>Celebrating the art of sarees, the richness of tradition and the elegance that transcends generations.</p>
-    <a href="#collection" class="btn gold">EXPLORE OUR COLLECTION</a>
+    <div class="eyebrow">Woven with heritage</div>
+    <h1>The timeless beauty of Indian sarees</h1>
+    <p>
+      Three generations of tradition, elegance and a love
+      for the art of sarees. Discover a collection where
+      heritage meets beauty.
+    </p>
+    <a class="btn btn-light" href="#collections">EXPLORE COLLECTIONS</a>
   </div>
-</section>
+</div>
 
-<section class="story" id="story">
-  <div class="story-content">
-    <p class="eyebrow">Our Heritage</p>
+<section id="heritage">
+  <div class="story">
+    <div class="eyebrow">Our story</div>
     <h2>Three Generations.<br>One Timeless Tradition.</h2>
-    <div class="divider"></div>
-    <p>Some traditions are more than a legacy. They are a way of life.</p>
-    <p>At Sri Bikrampur Bastralaya, our love for sarees, craftsmanship and timeless elegance has been carried through three generations of our family.</p>
-    <p>Every saree tells a story. Every weave carries a tradition. And every customer becomes a part of our journey.</p>
-    <p>We invite you to discover a world where tradition meets elegance.</p>
+    <p>
+      Sri Bikrampur Bastralaya is a family saree business
+      rooted in tradition, craftsmanship and the timeless
+      elegance of Indian textiles.
+    </p>
+    <p>
+      Across three generations, our love for sarees and
+      appreciation for their beauty has been a part of our
+      family journey. We believe every saree carries a story,
+      a tradition and a special memory waiting to be created.
+    </p>
+    <p>
+      Today, we continue this legacy with the same love
+      for traditional elegance, bringing sarees closer
+      to generations of customers.
+    </p>
   </div>
 </section>
 
-<section id="collection">
-  <div class="section-title">
-    <p class="eyebrow">Explore our world</p>
+<section id="collections">
+  <div class="section-heading">
+    <div class="eyebrow">Explore our world</div>
     <h2>Our Collections</h2>
-    <p>Discover timeless styles for every occasion.</p>
+    <p>Discover elegance in every weave.</p>
   </div>
 
   <div class="categories">
-    <a href="#sarees" class="category">
-      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80" alt="Traditional saree collection">
-      <div class="category-label">
+    <a class="category" href="#featured">
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85" alt="Traditional sarees">
+      <div class="category-overlay">
         <h3>Traditional Sarees</h3>
-        <p>Elegance rooted in heritage</p>
+        <p>Timeless classics</p>
       </div>
     </a>
 
-    <a href="#sarees" class="category">
-      <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e0?auto=format&fit=crop&w=900&q=80" alt="Elegant Indian saree">
-      <div class="category-label">
+    <a class="category" href="#featured">
+      <img src="https://images.unsplash.com/photo-1583391733956-6c782764d0d7?auto=format&fit=crop&w=900&q=85" alt="Elegant sarees">
+      <div class="category-overlay">
         <h3>Festive Elegance</h3>
-        <p>For your special moments</p>
+        <p>For special moments</p>
       </div>
     </a>
 
-    <a href="#sarees" class="category">
-      <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=80" alt="Indian textile and saree">
-      <div class="category-label">
+    <a class="category" href="#featured">
+      <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=85" alt="Indian saree collection">
+      <div class="category-overlay">
+        <h3>Graceful Classics</h3>
+        <p>Beauty that lasts</p>
+      </div>
+    </a>
+
+    <a class="category" href="#featured">
+      <img src="https://images.unsplash.com/photo-1609357605129-26f69f381e1d?auto=format&fit=crop&w=900&q=85" alt="Sarees">
+      <div class="category-overlay">
         <h3>Everyday Grace</h3>
-        <p>Beauty for every day</p>
+        <p>Elegance for every day</p>
       </div>
     </a>
   </div>
 </section>
 
-<section class="products" id="sarees">
-  <div class="section-title">
-    <p class="eyebrow">Curated with love</p>
-    <h2>Featured Sarees</h2>
-    <p>A glimpse into our collection.</p>
+<section id="featured">
+  <div class="section-heading">
+    <div class="eyebrow">Handpicked with love</div>
+    <h2>Discover Our Sarees</h2>
+    <p>Ask us about our latest collection and availability.</p>
   </div>
 
-  <div class="product-grid">
-    <div class="product">
-      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=80" alt="Featured saree">
-      <div class="product-info">
-        <h3>Heritage Collection</h3>
-        <p>Discover timeless Indian elegance.</p>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20am%20interested%20in%20your%20Heritage%20Collection." target="_blank">ENQUIRE ON WHATSAPP</a>
-      </div>
-    </div>
+  <div class="products">
 
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e0?auto=format&fit=crop&w=900&q=80" alt="Featured saree">
-      <div class="product-info">
-        <h3>Festive Collection</h3>
-        <p>Celebrate in timeless style.</p>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20am%20interested%20in%20your%20Festive%20Collection." target="_blank">ENQUIRE ON WHATSAPP</a>
-      </div>
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85" alt="Traditional saree">
+      <h3>Traditional Collection</h3>
+      <p>Celebrate timeless Indian craftsmanship.</p>
+      <a class="btn" href="https://wa.me/919330668700?text=Hello%2C%20I%20am%20interested%20in%20your%20Traditional%20Saree%20Collection.">ENQUIRE ON WHATSAPP</a>
     </div>
 
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=80" alt="Featured saree">
-      <div class="product-info">
-        <h3>Elegant Collection</h3>
-        <p>Grace for every occasion.</p>
-        <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20am%20interested%20in%20your%20Elegant%20Collection." target="_blank">ENQUIRE ON WHATSAPP</a>
-      </div>
+      <img src="https://images.unsplash.com/photo-1583391733956-6c782764d0d7?auto=format&fit=crop&w=900&q=85" alt="Festive saree">
+      <h3>Festive Collection</h3>
+      <p>Make every celebration memorable.</p>
+      <a class="btn" href="https://wa.me/919330668700?text=Hello%2C%20I%20am%20interested%20in%20your%20Festive%20Saree%20Collection.">ENQUIRE ON WHATSAPP</a>
     </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=85" alt="Elegant saree">
+      <h3>Elegant Classics</h3>
+      <p>Refined beauty for every occasion.</p>
+      <a class="btn" href="https://wa.me/919330668700?text=Hello%2C%20I%20am%20interested%20in%20your%20Elegant%20Saree%20Collection.">ENQUIRE ON WHATSAPP</a>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1609357605129-26f69f381e1d?auto=format&fit=crop&w=900&q=85" alt="Saree collection">
+      <h3>Everyday Collection</h3>
+      <p>Comfort, colour and timeless charm.</p>
+      <a class="btn" href="https://wa.me/919330668700?text=Hello%2C%20I%20am%20interested%20in%20your%20Everyday%20Saree%20Collection.">ENQUIRE ON WHATSAPP</a>
+    </div>
+
   </div>
 </section>
 
-<section class="heritage-banner">
-  <p class="eyebrow">A tradition that lives on</p>
-  <h2>Woven with Tradition.<br>Chosen with Love.</h2>
-  <p>From our family to yours, discover sarees that celebrate beauty, culture and timeless craftsmanship.</p>
-  <a href="#visit" class="btn gold">VISIT OUR STORE</a>
-</section>
+<div class="banner">
+  <div class="eyebrow">A family legacy</div>
+  <h2>Every Saree Tells a Story</h2>
+  <p>
+    From family celebrations to everyday moments,
+    let us help you find a saree that feels special.
+  </p>
+  <a class="btn btn-light" href="https://wa.me/919330668700?text=Hello%2C%20I%20would%20like%20to%20explore%20your%20saree%20collection.">EXPLORE WITH US</a>
+</div>
 
-<section class="testimonials">
-  <div class="section-title">
-    <p class="eyebrow">Words from our customers</p>
-    <h2>Our Customers</h2>
+<section id="contact">
+  <div class="section-heading">
+    <div class="eyebrow">We welcome you</div>
+    <h2>Visit Our Store</h2>
+    <p>We look forward to helping you find your perfect saree.</p>
   </div>
-  <div class="quote-grid">
-    <div class="quote">
-      <p>"Your customer experience and saree collection deserve to be celebrated."</p>
-      <h3>Our Customer</h3>
-    </div>
-    <div class="quote">
-      <p>"Tradition, elegance and beautiful choices under one roof."</p>
-      <h3>Our Customer</h3>
-    </div>
-    <div class="quote">
-      <p>"A family store that makes shopping for sarees special."</p>
-      <h3>Our Customer</h3>
-    </div>
-  </div>
-</section>
 
-<section class="visit" id="visit">
-  <p class="eyebrow">We would love to welcome you</p>
-  <h2>Visit Our Store</h2>
-  <div class="divider"></div>
-  <p><strong>Sri Bikrampur Bastralaya</strong></p>
-  <p>Kolkata, West Bengal, India</p>
-  <p>Visit us to explore our saree collection in person.</p>
-  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Sri+Bikrampur+Bastralaya+Kolkata" target="_blank">FIND US ON GOOGLE MAPS</a>
-  <br>
-  <a class="btn gold" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20would%20like%20to%20know%20your%20store%20location." target="_blank">CONTACT US ON WHATSAPP</a>
+  <div class="info-grid">
+    <div class="info">
+      <h3>Our Store</h3>
+      <p>Kolkata, West Bengal, India</p>
+      <p>Full address to be added</p>
+    </div>
+
+    <div class="info">
+      <h3>Contact Us</h3>
+      <p>WhatsApp / Phone</p>
+      <p>+91 93306 66800</p>
+      <a class="btn" href="https://wa.me/919330668700?text=Hello%2C%20Sri%20Bikrampur%20Bastralaya.">MESSAGE US</a>
+    </div>
+
+    <div class="info">
+      <h3>Our Tradition</h3>
+      <p>Three generations of saree heritage.</p>
+    </div>
+
+    <div class="info">
+      <h3>Personal Assistance</h3>
+      <p>Ask us about designs, availability and more.</p>
+    </div>
+  </div>
 </section>
 
 <footer>
   <h2>Sri Bikrampur Bastralaya</h2>
-  <p>Three Generations. One Timeless Tradition.</p>
-  <div class="divider"></div>
-  <p>Kolkata, West Bengal, India</p>
-  <p><a href="#home">Back to Top ↑</a></p>
-  <p>© 2026 Sri Bikrampur Bastralaya</p>
+  <p>Three Generations • Timeless Elegance</p>
+  <p>Kolkata, India</p>
+  <p>WhatsApp: <a href="https://wa.me/919330668700">+91 93306 66800</a></p>
+  <p>© Sri Bikrampur Bastralaya</p>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/91XXXXXXXXXX?text=Hello%2C%20I%20am%20interested%20in%20your%20saree%20collection." target="_blank">WhatsApp Enquiry</a>
+<a class="whatsapp" href="https://wa.me/919330668700?text=Hello%2C%20I%20am%20interested%20in%20Sri%20Bikrampur%20Bastralaya.">
+  WhatsApp Us
+</a>
 
 </body>
-  </html>
+</html>
