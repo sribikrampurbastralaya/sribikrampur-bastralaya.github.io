@@ -165,6 +165,79 @@ footer a{color:var(--gold)}
   .product img{height:300px}
   .banner h2{font-size:34px}
 }
+  
+/* Elegant transition effects */
+.category img,
+.product img {
+  transition: transform 0.7s ease;
+}
+
+.category:hover img,
+.product:hover img {
+  transform: scale(1.05);
+}
+
+.btn,
+nav a,
+.whatsapp {
+  transition: all 0.35s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.info,
+.product,
+.category {
+  transition: box-shadow 0.4s ease;
+}
+
+.info:hover,
+.product:hover,
+.category:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* Gentle hero entrance */
+.hero-content {
+  animation: heroReveal 1.2s ease both;
+}
+
+@keyframes heroReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 </style>
 </head>
 
